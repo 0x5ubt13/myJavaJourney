@@ -1,6 +1,6 @@
 package subtle.helloWorld;
 
-public class Main {
+public class ByteShortIntLong {
 
     public static void main(String[] args){
 

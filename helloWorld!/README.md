@@ -32,3 +32,5 @@ In this folder I will gather all the basic Java resources and examples necessary
 | Long | 64-bit | 0L | 100000 |
 | Float | single-precision 32-bit IEEE 754 floating point | 0.0f | 1.5 |
 | Double | double-precision 64-bit IEEE 754 floating point | 0.0d | 100.5 |
+
+
