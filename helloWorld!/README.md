@@ -1,6 +1,6 @@
 # Hello World!
 
-In this folder I will gather all the basic Java resources and examples necessary to start coding our own project, acting as a huge cheatsheet. 
+In this folder I will be gathering all the basic Java resources and examples necessary to start coding our own project, acting as a huge cheatsheet. 
 
 ## Java Access Modifiers:
     1) Private: The access level of a private modifier is only within the class. It cannot be accessed from outside the class.
