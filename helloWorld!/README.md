@@ -22,7 +22,7 @@ In this folder I will be gathering all the basic Java resources and examples nec
     5) String: returns a string of text.
 
 ## Java Primitive Types:
-| name                     | bits                     | default value for fields |          literals        |  
+| Name                     | Bits                     | Default value for fields |          Literals        |  
 |--------------------------|--------------------------|--------------------------|--------------------------|
 |   Boolean | 1-bit | 0 | True |
 |   Byte | 8-bit | 0 | 100 |
