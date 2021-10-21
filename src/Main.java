@@ -30,9 +30,19 @@ public class Main {
         System.out.println(studentSecondInitial);
 
         System.out.println(studentFirstName + " " +
-                studentLastName + " has a GPA of " + studentGPA);
-
+        studentLastName + " has a GPA of " + studentGPA);
+                
+        // Taking input:
+        System.out.println("What do you want to update it to?");
         Scanner input = new Scanner(System.in);
         studentGPA = input.nextDouble();
+        input.close();
+
+        // When taking input via scanner, we want to "cast it" to the type we want afterwards using
+        // the next method along with the type "blah.nextString()", "blah.nextInt()", etc
+
+        System.out.println(studentFirstName + " " + 
+        studentLastName + " now has a GPA of " + studentGPA);
+
     }
 }
