@@ -20,29 +20,44 @@ public class Main {
 
         // Reference types:
         // string: a sequence of ordered chars
-        String studentFirstName = "Kayla";
-        String studentLastName = "Hammond";
-        System.out.println(studentFirstName);
-        System.out.println(studentLastName);
-        char studentFirstInitial = studentFirstName.charAt(0);
-        char studentSecondInitial = studentLastName.charAt(0);
-        System.out.println(studentFirstInitial);
-        System.out.println(studentSecondInitial);
+        // String studentFirstName = "Kayla";
+        // String studentLastName = "Hammond";
+        // System.out.println(studentFirstName);
+        // System.out.println(studentLastName);
+        // char studentFirstInitial = studentFirstName.charAt(0);
+        // char studentSecondInitial = studentLastName.charAt(0);
+        // System.out.println(studentFirstInitial);
+        // System.out.println(studentSecondInitial);
 
-        System.out.println(studentFirstName + " " +
-        studentLastName + " has a GPA of " + studentGPA);
+        // System.out.println(studentFirstName + " " +
+        // studentLastName + " has a GPA of " + studentGPA);
                 
         // Taking input:
-        System.out.println("What do you want to update it to?");
-        Scanner input = new Scanner(System.in);
-        studentGPA = input.nextDouble();
-        input.close();
+        // System.out.println("What do you want to update it to?");
+        // Scanner input = new Scanner(System.in);
+        // studentGPA = input.nextDouble();
+        // input.close();
 
         // When taking input via scanner, we want to "cast it" to the type we want afterwards using
         // the next method along with the type "blah.nextString()", "blah.nextInt()", etc
 
-        System.out.println(studentFirstName + " " + 
-        studentLastName + " now has a GPA of " + studentGPA);
+        // System.out.println(studentFirstName + " " + 
+        // studentLastName + " now has a GPA of " + studentGPA);
+        
 
+        // Relational Operators:
+        // <, >, ==, >=, <=, !=
+
+        // Flow control: The Fortune Teller:
+        System.out.println("Pick a number between 1 and 10:");
+        Scanner fortune = new Scanner(System.in);
+        int fortuneTellerInput = fortune.nextInt();
+
+        if (fortuneTellerInput < 5) {
+            System.out.println("Enjoy the good luck a friend brings you");
+        } else {
+            System.out.println("Your shoe selection will make you very happy today");
+        }
+        
     }
 }
