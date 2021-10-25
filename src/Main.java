@@ -2,7 +2,12 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
+        basics();
+        challenge1();
+    }
+
+    static void basics() {
         // System.out.println("Hello World from the IntelliJ IDE!");
 
         // Primitive types: int, double, char & boolean
@@ -71,8 +76,35 @@ public class Main {
                 isOnRepeat = false;
             }
         }
-        System.out.println("Playing next song");
 
-        
+        System.out.println("Playing next song");
+    }
+
+    static void challenge1() {
+        String question = "Which was the most popular programming language in 2020?";
+        String choiceOne = "";
+        String choiceTwo = "";
+        String choiceThree = "";
+
+        String correctAnswer = choiceTwo;
+
+        // Write a print statement asking the question
+        // Write a print statement giving the answer choices
+
+        System.out.println(question + "\n" + choiceOne + "\n" + choiceTwo + "\n" + choiceThree);
+
+        // Have the user input an answer
+        // Retrieve the user's input
+
+        Scanner scanner = new Scanner(System.in);
+        scanner =
+
+        // If the user's input matches the correctAnswer...
+        // then the user is correct and we want to print out a congrats message to them.
+
+        // If the user's input doesn't match the correctAnswer...
+        // then the user is incorrect and we want to print out a message saying the user is wrong.
     }
 }
+
+
