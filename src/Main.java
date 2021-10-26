@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args){
-        basics();
+        //basics();
         challenge1();
     }
 
@@ -82,28 +82,34 @@ public class Main {
 
     static void challenge1() {
         String question = "Which was the most popular programming language in 2020?";
-        String choiceOne = "";
-        String choiceTwo = "";
-        String choiceThree = "";
+        String choiceOne = "Python";
+        String choiceTwo = "JavaScript";
+        String choiceThree = "Java";
 
-        String correctAnswer = choiceTwo;
+        String correctAnswer = choiceTwo.toLowerCase();
 
         // Write a print statement asking the question
         // Write a print statement giving the answer choices
 
-        System.out.println(question + "\n" + choiceOne + "\n" + choiceTwo + "\n" + choiceThree);
-
+        System.out.println(question + "\n- " + choiceOne + "\n- " + choiceTwo + "\n- " + choiceThree);
+        
         // Have the user input an answer
         // Retrieve the user's input
 
         Scanner scanner = new Scanner(System.in);
-        scanner =
+        String answer = scanner.next();
+
 
         // If the user's input matches the correctAnswer...
-        // then the user is correct and we want to print out a congrats message to them.
-
-        // If the user's input doesn't match the correctAnswer...
-        // then the user is incorrect and we want to print out a message saying the user is wrong.
+        
+        if (answer.toLowerCase().equals(correctAnswer)) {
+            // then the user is correct and we want to print out a congrats message to them.
+            System.out.println("Your answer is correct! Congrats!");
+        } else {
+            // If the user's input doesn't match the correctAnswer...
+            // then the user is incorrect and we want to print out a message saying the user is wrong.
+            System.out.println("Sorry, your answer is wrong. Try again!");
+        }
     }
 }
 
