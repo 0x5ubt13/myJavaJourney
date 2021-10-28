@@ -4,7 +4,8 @@ public class Main {
 
     public static void main(String[] args){
         //basics();
-        challenge1();
+        //challenge1();
+        functions();
     }
 
     static void basics() {
@@ -110,6 +111,11 @@ public class Main {
             // then the user is incorrect and we want to print out a message saying the user is wrong.
             System.out.println("Sorry, your answer is wrong. Try again!");
         }
+    }
+
+    static void functions() {
+        
+
     }
 }
 
