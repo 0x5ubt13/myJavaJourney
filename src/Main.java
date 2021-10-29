@@ -2,13 +2,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args){
-        //basics();
-        //challenge1();
-        functions();
-    }
-
-    static void basics() {
+    public static void basics() {
         // System.out.println("Hello World from the IntelliJ IDE!");
 
         // Primitive types: int, double, char & boolean
@@ -81,7 +75,7 @@ public class Main {
         System.out.println("Playing next song");
     }
 
-    static void challenge1() {
+    public static void challenge1() {
         String question = "Which was the most popular programming language in 2020?";
         String choiceOne = "Python";
         String choiceTwo = "JavaScript";
@@ -113,9 +107,21 @@ public class Main {
         }
     }
 
-    static void functions() {
+    public static void functions() {
         
+        System.out.println("Waiting for developer tea time.");
+        System.out.println("Type in a random word and press Enter to start developer tea time:");
+        Scanner input = new Scanner(System.in);
+        input.next();
+        input.close();
+        System.out.println("It's developer tea time!");;
 
+    }
+
+    public static void main(String[] args){
+        //basics();
+        //challenge1();
+        functions();
     }
 }
 
