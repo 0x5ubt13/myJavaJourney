@@ -109,15 +109,29 @@ public class Main {
 
     public static void functions() {
         
+        // Call here all the functions created during the functions chapter
+        developerTeaTime();
+        calculateTotalMealPrice(15, .2, .08);
+
+    }
+
+    public static void developerTeaTime() {
         System.out.println("Waiting for developer tea time.");
         System.out.println("Type in a random word and press Enter to start developer tea time:");
         Scanner input = new Scanner(System.in);
         input.next();
         input.close();
-        System.out.println("It's developer tea time!");;
-
+        System.out.println("It's developer tea time!");
     }
 
+    public static void calculateTotalMealPrice(double listedMealPrice, 
+                                               double tipRate, 
+                                               double taxRate) {
+        double tip = tiprate * listedMealPrice;
+        double tax = taxrate * listedMealPrice;
+        double result = listedMealPrice + tip + tax
+        System.out.println("Your total meal price is " + result);
+    }
     public static void main(String[] args){
         //basics();
         //challenge1();
