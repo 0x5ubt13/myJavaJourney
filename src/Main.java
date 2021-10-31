@@ -108,10 +108,10 @@ public class Main {
     }
 
     public static void functions() {
-        
         // Call here all the functions created during the functions chapter
-        developerTeaTime();
-        calculateTotalMealPrice(15, .2, .08);
+        //developerTeaTime();
+        double mealPrice = calculateTotalMealPrice(100, .2, .08);
+        individualMealPrice(mealPrice);
 
     }
 
@@ -124,18 +124,41 @@ public class Main {
         System.out.println("It's developer tea time!");
     }
 
-    public static void calculateTotalMealPrice(double listedMealPrice, 
-                                               double tipRate, 
-                                               double taxRate) {
-        double tip = tiprate * listedMealPrice;
-        double tax = taxrate * listedMealPrice;
-        double result = listedMealPrice + tip + tax
+    public static double calculateTotalMealPrice(double listedMealPrice, 
+                                                 double tipRate, 
+                                                 double taxRate) {
+        double tip = tipRate * listedMealPrice;
+        double tax = taxRate * listedMealPrice;
+        double result = listedMealPrice + tip + tax;
         System.out.println("Your total meal price is " + result);
+
+        return result;
     }
+
+    public static void individualMealPrice(double totalPrice){
+        System.out.println("How many people are in the table?");
+        Scanner scanner = new Scanner(System.in);
+        double people = scanner.nextDouble();
+        double individualPrice = totalPrice / people;
+        System.out.println("The shared price is £" + individualPrice + " per person");
+    }
+
+    public static void dotOperator() {
+        // Example with Math.pow
+        System.out.println("Calculating powers.\nPlease enter the base, press Enter and then enter the exponent: ");
+        Scanner aScan = new Scanner(System.in);
+        Scanner bScan = new Scanner(System.in);
+        double a = aScan.nextDouble();
+        double b = bScan.nextDouble();
+        double result = Math.pow(a, b);
+        System.out.println(a + " elevated to the power of " + b + " is: " + result);
+    }
+
     public static void main(String[] args){
         //basics();
         //challenge1();
-        functions();
+        //functions();
+        dotOperator();
     }
 }
 
