@@ -110,9 +110,11 @@ public class Main {
     public static void functions() {
         // Call here all the functions created during the functions chapter
         //developerTeaTime();
-        double mealPrice = calculateTotalMealPrice(100, .2, .08);
-        individualMealPrice(mealPrice);
-
+        //double mealPrice = calculateTotalMealPrice(100, .2, .08);
+        //individualMealPrice(mealPrice);
+        //dotOperator();
+        double totalYear = functionsChallenge();
+        System.out.println("The employee's gross yearly salary is £" + totalYear + "/yr");
     }
 
     public static void developerTeaTime() {
@@ -150,15 +152,72 @@ public class Main {
         Scanner bScan = new Scanner(System.in);
         double a = aScan.nextDouble();
         double b = bScan.nextDouble();
-        double result = Math.pow(a, b);
+        double result = Math.pow(a, b); // This line features the use of the method pow from Math
         System.out.println(a + " elevated to the power of " + b + " is: " + result);
     }
+    
+    public static double functionsChallenge(){
+        // Input 1: number of hours the employee works per week
+        // Input 2: amount of money the employee makes per hour
+        // Output: employee's gross yearly salary
+        // Note: not to worry about taxes or anything else payroll related
+        // Bonus: add input that accounts for vacation days
+        //        the employee doesn't get paid for vacation days
+        //        1 vacation day = 8h work
+                
+        double labourWeeks = 52.0;
 
+        // Input 1
+        System.out.println("How many hours does the employee work per week?");
+        Scanner hours = new Scanner(System.in);
+        double weeklyHours = hours.nextDouble(); 
+        System.out.println("The employee works " + weeklyHours + " hours/week.");
+        // Check to ensure functionality 
+        if (weeklyHours < 0) {
+            return -1;
+        }
+
+        // Input 2
+        System.out.println("How much does the employee earn per hour?");
+        Scanner money = new Scanner(System.in);
+        double hourlyRate = money.nextDouble(); 
+        System.out.println("The employee makes £" + hourlyRate + "/hour");
+        // Check to ensure functionality 
+        if (hourlyRate < 0) {
+            return -1;
+        }
+
+        // Bonus
+        System.out.println("How many days of vacations has the employee taken this year?");
+        Scanner vacations = new Scanner(System.in);
+        double vacationDays = vacations.nextDouble();
+        double unpaidTime = vacationDays * hourlyRate * 8;
+        // Check to ensure functionality 
+        if (vacationDays < 0) {
+            return -1;
+        }
+        
+        // Output
+        double totalYear = (weeklyHours * hourlyRate * labourWeeks) - unpaidTime;
+        return totalYear;
+    }
+
+    public static void classes() {
+        Triangle triangleA = new Triangle(15, 8, 15, 8, 17);
+        Triangle triangleB = new Triangle(3, 2.598, 3, 3, 3);
+
+        double triangleAArea = triangleA.findArea();
+        System.out.println(triangleAArea);
+
+        double triangleBArea = triangleB.findArea();
+        System.out.println(triangleBArea);
+
+    }
     public static void main(String[] args){
         //basics();
         //challenge1();
         //functions();
-        dotOperator();
+        classes();
     }
 }
 
