@@ -213,11 +213,24 @@ public class Main {
         System.out.println(triangleBArea);
 
     }
+
+    public static void classesChallenge() {
+        // Represent a college student#s profile with the student class
+        // It should contain first name, last name, expected year to graduate, GPA and declared major
+        // The class should have at least one behaviour: incrementing the expected year to grad by one
+        // The class sould have a constructor that initializes all of the attributes with dynamic values, meaning the
+        // values that the constructor is called with will determine the values of the attributes
+        // Then, create two student profile instances and the program should call incrementExpectedGraduationYear on one of the student profiles
+        // and print out their expected graduation year instance value to the console
+
+        
+    }
     public static void main(String[] args){
         //basics();
         //challenge1();
         //functions();
-        classes();
+        //classes();
+        classesChallenge();
     }
 }
 
