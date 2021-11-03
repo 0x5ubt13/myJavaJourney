@@ -223,7 +223,12 @@ public class Main {
         // Then, create two student profile instances and the program should call incrementExpectedGraduationYear on one of the student profiles
         // and print out their expected graduation year instance value to the console
 
-        
+        Student studentA = new Student("Maria", "Garcia", 2024, 7.8, "Modern Languages");
+        Student studentB = new Student("Gabriel", "Garcia", 2022, 9.8, "Computer Science");
+    
+        studentA.incrementExpectedGraduationYear();
+        studentB.printExpectedGraduationYear();
+        studentA.printExpectedGraduationYear();
     }
     public static void main(String[] args){
         //basics();
