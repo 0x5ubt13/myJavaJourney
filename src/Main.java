@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -215,13 +217,13 @@ public class Main {
     }
 
     public static void classesChallenge() {
-        // Represent a college student#s profile with the student class
-        // It should contain first name, last name, expected year to graduate, GPA and declared major
-        // The class should have at least one behaviour: incrementing the expected year to grad by one
-        // The class sould have a constructor that initializes all of the attributes with dynamic values, meaning the
-        // values that the constructor is called with will determine the values of the attributes
-        // Then, create two student profile instances and the program should call incrementExpectedGraduationYear on one of the student profiles
-        // and print out their expected graduation year instance value to the console
+    /*  Represent a college student#s profile with the student class
+        It should contain first name, last name, expected year to graduate, GPA and declared major
+        The class should have at least one behaviour: incrementing the expected year to grad by one
+        The class sould have a constructor that initializes all of the attributes with dynamic values, meaning the
+        values that the constructor is called with will determine the values of the attributes
+        Then, create two student profile instances and the program should call incrementExpectedGraduationYear on one of the student profiles
+        and print out their expected graduation year instance value to the console */ 
 
         Student studentA = new Student("Maria", "Garcia", 2024, 7.8, "Modern Languages");
         Student studentB = new Student("Gabriel", "Garcia", 2022, 9.8, "Computer Science");
@@ -230,12 +232,41 @@ public class Main {
         studentB.printExpectedGraduationYear();
         studentA.printExpectedGraduationYear();
     }
+
+    public static void genericsExample() {
+        
+        // Example without Generics
+        List names = new ArrayList();
+        names.add("Maria");
+        String name = (String) names.get(0);
+        System.out.println("First name: " + name);
+        names.add(7); // Compiler doesn't complain about this. Dangerous.
+
+        // Example with Generics
+        List<String> names2 = new ArrayList();
+        names2.add("Maria");
+        String name2 = names2.get(0);
+        System.out.println("First name: " + name2);
+        //names2.add(7); // Error: int not allowed in this list.
+
+    }
+
+    public static void genericsInJava() {
+        genericsExample();
+
+    }
+
+    // public static void advancedDataStructure(){
+    // }
+
     public static void main(String[] args){
         //basics();
         //challenge1();
         //functions();
         //classes();
-        classesChallenge();
+        //classesChallenge();
+        genericsInJava();
+        //advancedDataStructure();
     }
 }
 
