@@ -1,3 +1,5 @@
+package subtle;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -248,6 +250,13 @@ public class Main {
         String name2 = names2.get(0);
         System.out.println("First name: " + name2);
         //names2.add(7); // Error: int not allowed in this list.
+
+    }
+
+    public static void GenericMethods(){
+        
+        
+
 
     }
 

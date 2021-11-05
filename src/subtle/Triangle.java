@@ -1,3 +1,5 @@
+package subtle;
+
 public class Triangle {
 
     static int numOfSides = 3;

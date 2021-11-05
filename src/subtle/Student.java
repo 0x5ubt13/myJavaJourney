@@ -1,3 +1,5 @@
+package subtle;
+
 public class Student {
     // Represent a college student#s profile with the student class
     // It should contain first name, last name, expected year to graduate, GPA and declared major
