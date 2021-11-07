@@ -1,5 +1,9 @@
 package subtle.substitution_principle;
 
-public class Office {
+class Office extends Building {
 
+    @Override
+    public String toString() {
+        return("office");
+    }
 }

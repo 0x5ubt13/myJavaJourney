@@ -15,6 +15,16 @@ public class Main {
         List<Building> buildings = new ArrayList();
         buildings.add(new Building());
         buildings.add(new Office());
+        printBuildings(buildings);
+
+        // The code below won't work just yet because the substitution principle is not implemented.
+        // We need to add wildcards
+        
+        // List<Office> offices = new ArrayList();
+        // offices.add(new Office());
+        // offices.add(new Office());
+        // printBuildings(offices);
+
     }
 
     static void build(Building building) {
@@ -26,5 +36,4 @@ public class Main {
             System.out.println(i + 1 + ": " + buildings.get(i).toString());
         }
     }
-
 }
