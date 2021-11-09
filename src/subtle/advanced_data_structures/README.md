@@ -1,11 +1,12 @@
 # Collections in Java
 
-
-| Iterable |
-| ¦ |
-| Collection |
-| / | ¦ | \ |
-| Set | List | Queue |
+```
+   Iterable
+      |
+  Collection
+  /   |   \ 
+ Set List Queue
+```
 
 ## Set 
 - No duplicates
