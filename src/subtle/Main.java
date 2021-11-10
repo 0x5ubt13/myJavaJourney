@@ -253,13 +253,6 @@ public class Main {
 
     }
 
-    public static void GenericMethods(){
-        
-        
-
-
-    }
-
     public static void genericsInJava() {
         genericsExample();
 

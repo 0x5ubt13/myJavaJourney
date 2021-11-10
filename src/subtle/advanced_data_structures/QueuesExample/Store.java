@@ -11,5 +11,16 @@ public class Store {
         queue.add(new Customer("Maria"));
         queue.add(new Customer("Emanuel"));
         queue.add(new Customer("Manolete"));
+        System.out.println(queue);
+        serveCustomer(queue);
+        System.out.println(queue);
+    }
+
+    static void serveCustomer(LinkedList<Customer> queue) {
+
+        Customer c = queue.poll();
+        c.serve();
+
+
     }
 }
